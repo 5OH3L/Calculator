@@ -3,10 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>Calculator</title>
 </head>
 <body>
+    <div id="programmer"><h1>Made By&nbsp;<a href="https://github.com/5OH3L" target="_blank" rel="noopener noreferrer">&#169; S O H E L</a></h1></div>
+    <div id="container">
+        <div id="calculatorContainer">
+            <div id="calculatorAllElements">
+                <header id="calculatorHeader">
+                    <input type="text" placeholder="Type something..." id="input" readonly>
+                </header>
+                <footer id="calculatorFooter">
+                    <button class="column" id="ac" data-value="ac" data-key="specialOperator">AC</button>
+                    <button class="column" id="de" data-value="de" data-key="specialOperator">DE</button>
+                    <button class="column" id="add" data-value="+" data-key="operator">+</button>
+                    <button class="column" id="seven" data-value="7" data-key="number">7</button>
+                    <button class="column" id="eight" data-value="8" data-key="number">8</button>
+                    <button class="column" id="nine" data-value="9" data-key="number">9</button>
+                    <button class="column" id="subtract" data-value="-" data-key="operator">-</button>
+                    <button class="column" id="four" data-value="4" data-key="number">4</button>
+                    <button class="column" id="five" data-value="5" data-key="number">5</button>
+                    <button class="column" id="six" data-value="6" data-key="number">6</button>
+                    <button class="column" id="multiply" data-value="x" data-key="operator">&times;</button>
+                    <button class="column" id="one" data-value="1" data-key="number">1</button>
+                    <button class="column" id="two" data-value="2" data-key="number">2</button>
+                    <button class="column" id="three" data-value="3" data-key="number">3</button>
+                    <button class="column" id="divide" data-value="&divide;" data-key="operator">&divide;</button>
+                    <button class="column" id="zero" data-value="0" data-key="number">0</button>
+                    <button class="column" id="dot" data-value="." data-key="number">.</button>
+                    <button class="column" id="equals" data-value="" data-key="equals">=</button>
+                </footer>
+            </div>
+        </div>
+    </div>
     <script src="./js/script.js"></script>
 </body>
 </html>
