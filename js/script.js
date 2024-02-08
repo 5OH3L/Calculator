@@ -61,12 +61,13 @@ let displayNum = (userInput) =>{
         step = 1;
     }else if(userInput.target.dataset.key == "operator" && step == 2 && secondNum != ""){
         input.value = operate(operator, firstNum, secondNum);
-        firstNum = input.value
-        secondNum = input.value.slice(firstNum, -1);
+        firstNum = input.value;
+        operator = userInput.target.dataset.value;
         input.value += operator;
+        secondNum = '';
     }else if(userInput.target.dataset.key == "operator" && step == 2){
         operator = userInput.target.dataset.value;
-        input.value = input.value.slice(0,-1);
+        input.value = firstNum;
         input.value += operator;
     }
     console.log(`Step : ${step}\nFirstNum : ${firstNum}\nSecondNum : ${secondNum}\nOp : ${operator}`);
